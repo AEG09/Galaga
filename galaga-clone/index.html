@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaga Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <div id="score-board">SCORE: <span id="score">0</span></div>
+            <div id="high-score-board">HIGH: <span id="high-score">0</span></div>
+            <div id="start-screen" class="screen active">
+                <h1>GALAGA <span class="neon-text">NEON</span></h1>
+                <p>Press <span class="key">SPACE</span> or Click to Start</p>
+            </div>
+            <div id="game-over-screen" class="screen hidden">
+                <h1>GAME OVER</h1>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <p>Press <span class="key">SPACE</span> to Restart</p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js" defer></script>
+</body>
+
+</html>
